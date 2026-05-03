@@ -1,0 +1,11 @@
+<input id="w" placeholder="Weight">
+<input id="h" placeholder="Height">
+<button onclick="bmi()">Calc</button>
+<p id="r"></p>
+
+<script>
+function bmi(){
+ let w=w.value,h=h.value/100;
+ r.innerHTML=(w/(h*h)).toFixed(2);
+}
+</script>
